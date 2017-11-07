@@ -1,16 +1,13 @@
 const http = require('http');
+const fs = require('fs');
 
-const server = http.createServer();
+//require express, invoke express function
+const express = require('express');
+const app = express();
 
-server.on('request', (req, res) => {
-  res.write('Hello Node');
-  res.end();
-});
+//serves static files in client folder
+app.use(express.static(__dirname + '/../client'));
 
-server.listen(8080);
-
-//Basic server
- //end() shuts off the stream
- //server listens on port 8080
-
+//server is listening on 8080
+app.listen(8080);
 
