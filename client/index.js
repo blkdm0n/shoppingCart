@@ -1,6 +1,6 @@
-
+import App from './components/app'
 
 ReactDOM.render(
-  <h2>Hello from REACT</h2>,
+  <App/>,
   document.getElementById('root')
 );
