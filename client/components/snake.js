@@ -1,3 +1,5 @@
+const React = require('react');
+
 import SnakeList from './snakelist';
 
 const Snake = (props) => {

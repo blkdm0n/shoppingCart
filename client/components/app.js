@@ -1,5 +1,8 @@
 //this component holds everything else
 
+//this helps when we use this with ReactDOMServer in NODE!!!!
+const React = require('react');
+
 import Snake from './snake';
 class App extends React.Component {
   state = {data: 'here is some data for you'}
